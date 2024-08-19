@@ -31,7 +31,7 @@ def main():
         df = openai_integration.generate_message(df)
 
         # Save the updated DataFrame to a CSV file
-        df.to_csv("../data/personalized_messages.csv", index=False)
+        df.to_csv("../data/reddit_data_with_personalized_messages.csv", index=False)
         print("Personalized messages generated and saved.")
     else:
         print("No data extracted from subreddits.")
